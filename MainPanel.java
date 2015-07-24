@@ -68,6 +68,7 @@ public class MainPanel extends JPanel implements KeyListener {
         if(hockeyBall.y > 440) {
             if(hockeyBar2.x < hockeyBall.x && hockeyBar2.x + 300 > hockeyBall.x){
               hockeyBall.speedY = -hockeyBall.speedY;
+              hockeyBall.speedX += hockeyBar2.speedX;
             } else {
                 restart("blue");
             }
